@@ -1,0 +1,328 @@
+﻿*{
+    -webkit-tap-highlight-color: transparent;
+}
+                                /*              = = = =  = = = =  = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = =        SideBar Menu      = = = = = = = = = = = = = = = = = = = = = =
+                                                = = = =  = = = =  = = = =                                          */
+#menu{
+    position: fixed;
+    left: 0;
+    width: 40vw;
+    height: 100vh;
+    z-index: 2;
+    background: #333333;
+    display: none;
+    color: white;
+}
+#menu ul{
+    padding: 0;
+    margin: 0;
+}
+#menu li:first-child{
+    font-size: 33px;
+    padding-top: 10%!important;
+    padding-bottom: 10%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #E0E0E0;
+}
+#menu li{
+    color: #E0E0E0;
+    font-weight: 700;
+    padding-left: 10%;
+    text-align: left;
+    list-style: none;
+    padding-top:15%;
+    font-size: 4vw;
+}
+#menu a{
+    text-decoration: none;
+}
+#shade{
+    position: fixed;
+    width: 100vw;
+    min-height: 100%;
+    z-index: 1;
+    background: rgba(33,33,33,.6);
+    display: none;
+}
+                        
+                                /*               = = = =  = = = =  = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = =     First Section      = = = = = = = = = = = = = = = = = = = = = =
+                                                 = = = =  = = = =  = = = =                                          */
+
+#cart{
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    text-decoration: none;
+}
+.openSans{
+    font-family:"Open Sans", "Helvetica Neue", Helvetica;
+}
+#firstSection{
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-image: url("../images/bg.png");
+    padding: 0!important;
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =      Logo      = = = = = = = = = = = = = = = = = = = = = = */
+#logo{
+    position: absolute;
+    padding-top: 2%;
+    padding-right: 6%;
+    width: 22vw;
+    right: 0;
+
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =     Navigation Bar      = = = = = = = = = = = = = = = = = = = = = = */
+ul.topnav {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    color: #9E9E9E;
+    padding: 3% 4% 0 0;
+}
+ul.topnav li a {
+    display: inline-block;
+    transition: 0.5s;
+}
+ul.topnav li:nth-child(2){
+    padding-left:  3vw;
+}
+ul.topnav li{
+    padding-right: 1vw;
+}
+ul.topnav li.icon {
+    display: none;
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =      First Paragraph      = = = = = = = = = = = = = = = = = = = = = = */
+#firstP{
+    padding-top: 30vh;
+}
+#getStarted a{
+    padding: 1%;
+    line-height: 150%;
+}
+ /*                                              = = = =  = = = =  = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = =     Second Section      = = = = = = = = = = = = = = = = = = = = = =
+                                                 = = = =  = = = =  = = = =                                          */
+#secondSection{
+    padding: 0!important;
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+}
+#try{
+    padding:5% 15%!important;
+
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =      Services      = = = = = = = = = = = = = = = = = = = = = = */
+#services{
+    width: 100%;
+    background: #E8EDF1;
+    padding: 3% 6%;
+}
+#services li{
+    border:none;
+    width: 33.333%;
+    padding: 0 5%!important;
+    }
+#services li:nth-child(2){
+    border-left: 0.1vmax solid grey!important;
+    border-right: 0.1vmax solid grey!important;
+}
+#services li img{
+    width: 4vmax;
+    height: auto;
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =      Features      = = = = = = = = = = = = = = = = = = = = = = */
+#features{
+    padding: 7% 5%;
+}
+#features li{
+    border: none;
+    width: 33.3%;
+    padding: 0 5%;
+}
+#features li:nth-child(3){
+    margin: 0;
+}
+#features li span:nth-child(1){
+    line-height: 200%;
+    display: block;
+    color: #424242;
+    font-size: 3.5vmin;
+    font-weight: bold;
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =      Footer      = = = = = = = = = = = = = = = = = = = = = = */
+footer{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    display: inline-block!important;
+    background: #383B3E;
+    padding: 1% 10%;
+    font-size: 2.5vmin;
+}
+footer p{
+    display: inline-block;
+    float: left;
+    margin: 0;
+}
+footer>hr{
+    border-color: #9E9E9E;
+    display: none;
+}
+footer a{
+    display: inline-block;
+    border-right: 0.1vmax solid grey;
+    float: right;
+    padding: 0 2%;
+    text-decoration: none;
+}
+footer a:nth-child(3){
+    border: none!important;
+}
+  /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  = = = = = = = = = = = = = = = = = = = = = = =          RESPONSIVE                           = = = = = = = = = = = = = = = = = = = = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =*/
+
+
+
+
+
+                                /*                  = = = =  = = = =  = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = =     Responsive First Section      = = = = = = = = = = = = = = = = = = = = = =
+                                                    = = = =  = = = =  = = = =                                          */
+@media only screen and (max-width:769px) and (orientation: portrait ) {
+    #firstSection{
+        width: 100vw;
+        height: 65vh;
+    }
+/* = = = = = = = = = = = = = = = = = = = = = = =      Responsive Logo      = = = = = = = = = = = = = = = = = = = = = = */
+    #logo{
+        padding:5% 2% 0% 2%;
+        height: 15.5%;
+        width: auto!important;
+    }
+/* = = = = = = = = = = = = = = = = = = = = = = =     Responsive Navigation Bar    = = = = = = = = = = = = = = = = = = = = = = */
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+
+    ul.topnav{
+        top:0;
+        width: 45%!important;
+        padding-left: 0;
+    }
+    ul.topnav li.icon {
+        padding-top: 10%;
+        font-size: 3vmax;        
+        float: left;
+        display: inline-block;
+    }
+    ul.topnav li a{
+        padding:10% 0 5% 3vw!important;
+    }
+/* = = = = = = = = = = = = = = = = = = = = = = =      Responsive First  Paragraph      = = = = = = = = = = = = = = = = = = = = = = */
+    #firstP{
+        padding-top: 20vh;
+    }
+    #firstP p{
+        padding: 0 12vmin;
+    }
+    #getStarted{
+        padding-top: 2vw;
+    }
+    #getStarted a{
+        padding: 2%;
+    }
+                                /*                  = = = =  = = = =  = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = =     Responsive Second Section      = = = = = = = = = = = = = = = = = = = = = =
+                                                    = = = =  = = = =  = = = =                                          */
+    #secondSection{
+        padding: 0!important;
+        position: absolute;
+        top: 65vh;
+        width: 100vw;
+    }   
+    #try{
+        padding:8% 4%!important;
+        font-size: medium!important;
+    }
+    #try p span{
+        font-size: large!important;
+    }
+    #services{
+        padding: 8%;
+    }
+    #services li:nth-child(2){
+        border: none!important;
+        border-bottom: 0.1vmax solid grey!important;        
+    }
+    #services li:nth-child(3){
+        margin: 0;
+    }
+    #services li{
+        font-size: medium;
+        width: 100%;
+        border:none!important;
+        border-bottom: 0.1vmax solid grey!important;
+        margin-bottom: 10%;
+        padding: 0 0 5% 0!important;
+        box-sizing: border-box!important;
+        }
+    #services li:nth-child(3){
+        border-bottom: none!important;
+        padding-bottom: 0!important;
+    }
+    #features{
+        padding: 8%;
+    }
+    #features li{
+        padding: 0;
+        padding-bottom: 10%;
+        margin: 0;
+        border: none;
+        width: 100%;
+        font-size: medium;
+        border-bottom: 0.1vmax solid grey!important;
+    }
+   #features li span:nth-child(1){
+        margin-top: 15%;
+        line-height: 30%;
+        display: block;
+        font-size: larger;
+    }
+    footer{
+        padding: 4%;
+        font-size: 3.4vw;
+    }
+    footer p{
+        text-align: center;
+        float: none;
+    }
+    footer>hr{
+        display: block;
+        margin:5% auto;
+        width:30%;
+        color:grey;
+    }
+    footer a{
+        float: none;
+        border-right: 0.1vmax solid grey!important;
+        padding: 0 2%;
+        text-decoration: none;
+    }
+    footer a:last-child{
+        border: none!important;
+    }
+    footer a:nth-child(3){
+    border-right: 0.1vmax solid grey!important;
+}
+}

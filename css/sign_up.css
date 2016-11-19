@@ -1,0 +1,172 @@
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+                                /*              = = = =  = = = =  = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = =        SideBar Menu      = = = = = = = = = = = = = = = = = = = = = =
+                                                = = = =  = = = =  = = = =                                          */
+#menu{
+    position: fixed;
+    left: 0;
+    width: 40vw;
+    height: 100vh;
+    z-index: 2;
+    background: #333333;
+    display: none;
+    color: white;
+}
+#menu ul{
+    padding: 0;
+    margin: 0;
+}
+#menu li:first-child{
+    font-size: 33px;
+    padding-top: 10%!important;
+    padding-bottom: 10%;
+    box-sizing: border-box;
+    border-bottom: 2px solid #E0E0E0;
+}
+#menu li{
+    color: #E0E0E0;
+    font-weight: 700;
+    padding-left: 10%;
+    text-align: left;
+    list-style: none;
+    padding-top:15%;
+    font-size: 4vw;
+}
+#menu a{
+    text-decoration: none;
+}
+#shade{
+    position: fixed;
+    width: 100vw;
+    min-height: 100%;
+    z-index: 1;
+    background: rgba(33,33,33,.6);
+    display: none;
+}
+                        
+                                /*               = = = =  = = = =  = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = =     First Section      = = = = = = = = = = = = = = = = = = = = = =
+                                                 = = = =  = = = =  = = = =                                          */
+.openSans{
+    font-family:"Open Sans", "Helvetica Neue", Helvetica;
+}
+#firstSection{
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-image: url("../images/bg.png");
+    padding: 0!important;
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =      Logo      = = = = = = = = = = = = = = = = = = = = = = */
+#logo{
+    position: absolute;
+    padding-top: 2%;
+    padding-right: 6%;
+    width: 22vw;
+    right: 0;
+
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =     Navigation Bar      = = = = = = = = = = = = = = = = = = = = = = */
+ul.topnav {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    color: #9E9E9E;
+    padding: 3% 4% 0 0;
+}
+ul.topnav li a {
+    display: inline-block;
+    transition: 0.5s;
+}
+ul.topnav li:nth-child(2){
+    padding-left:  3vw;
+}
+ul.topnav li{
+    padding-right: 1vw;
+    float: left!important;
+}
+ul.topnav li.icon {
+    display: none;
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = =          Sign Up          = = = = = = = = = = = = = = = = = = = = = = */
+
+#signup{
+    clear: both;
+    width: 30vw;
+    height: 50vh;
+    margin: 0 auto;
+    padding-top: 15%;
+}
+#signup a{
+    float: left;
+    width: 50%;
+}
+.email{
+    background:transparent;
+    color: white;
+    margin-bottom:7%;
+}
+  /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  = = = = = = = = = = = = = = = = = = = = = = =          RESPONSIVE                           = = = = = = = = = = = = = = = = = = = = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =*/
+@media screen and (max-width:769px) and (orientation:portrait) {
+
+
+                                /*                  = = = =  = = = =  = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = =     Responsive First Section      = = = = = = = = = = = = = = = = = = = = = =
+                                                    = = = =  = = = =  = = = =                                          */
+
+
+/* = = = = = = = = = = = = = = = = = = = = = = =      Responsive Logo      = = = = = = = = = = = = = = = = = = = = = = */
+    #logo{
+        padding:5% 2% 0% 2%;
+        height: 18vw;
+        width: auto!important;
+    }   
+/* = = = = = = = = = = = = = = = = = = = = = = =     Responsive Navigation Bar    = = = = = = = = = = = = = = = = = = = = = = */
+    ul.topnav li:not(:first-child) {
+        display: none;
+    }
+
+    ul.topnav{
+        top:0;
+        width: 45%!important;
+        padding-left: 0;
+    }
+    ul.topnav li.icon {
+        padding-top: 10%;
+        font-size: 3vmax;        
+        float: left;
+        display: inline-block;
+    }
+    ul.topnav li a{
+        padding:10% 0 5% 3vw!important;
+    }
+
+/* = = = = = = = = = = = = = = = = = = = = = = =          login          = = = = = = = = = = = = = = = = = = = = = = */
+    
+    #signup{
+        clear: both;
+        width: 70vw;
+        height: 50vh;
+        margin: 0 auto;
+        padding-top: 55%;
+    }
+    #signup a{
+        font-size: 4vw!important;        
+        width: 50%;
+    }
+    #signup input{
+        font-size: 4vw!important;
+    }
+    .email{
+        margin-bottom:10%;
+    }
+}

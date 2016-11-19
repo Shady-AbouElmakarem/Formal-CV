@@ -1,0 +1,18 @@
+﻿/* = = = = = = = = = = = = = = = = = = = = = = =            prototype        = = = = = = = = = = = = = = = = = = = = = = */
+@font-face {
+    font-family: prototype;
+    src: url(../fonts/Prototype.ttf);
+}
+.w3-prototype{
+    font-family: prototype!important;
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =            express        = = = = = = = = = = = = = = = = = = = = = = */
+
+@font-face {
+    font-family:  w3-primer;
+    src: url(../fonts/primer.ttf);
+}
+.w3-primer{
+    font-family:  w3-primer!important;
+}
+/* = = = = = = = = = = = = = = = = = = = = = = =            new        = = = = = = = = = = = = = = = = = = = = = = */

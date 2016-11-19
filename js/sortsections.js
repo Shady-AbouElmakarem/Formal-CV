@@ -1,0 +1,12 @@
+$(".personal").attr('data-order',$('#show1').index());
+$(".summary").attr('data-order',$('#show2').index());
+$(".experience").attr('data-order',$('#show3').index());
+$(".education").attr('data-order',$('#show4').index());
+$(".skills").attr('data-order',$('#show5').index());
+$(".activity").attr('data-order',$('#show6').index());
+$(".lang").attr('data-order',$('#show7').index());
+$(".new").attr('data-order',$('#show8').index());
+$(".new2").attr('data-order',$('#show9').index());
+var divList = $(".sort");
+divList.sort(function(a, b){ return $(a).data("order")-$(b).data("order");});
+$(".note-editable").html(divList);

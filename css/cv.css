@@ -1,0 +1,233 @@
+html{
+  min-height:100%;
+}
+#cv{
+  width:100%;
+}
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ul.example li.placeholder {
+  position: relative;
+}
+ul.example li.placeholder:before {
+  position: absolute;
+}
+
+/*                  = = = =  = = = =  = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = =         Choose template       = = = = = = = = = = = = = = = = = = = = = =
+= = = =  = = = =  = = = =                                           */
+
+#template{
+  display: none;
+  width: 100vw;
+  min-height: 100%;
+  background: rgba(53,53,53,.7);
+  padding-top: 19vh;
+}
+#template p{
+  width:55%;
+  clear: both;
+  margin: 0 auto;
+  padding:2% 0;
+  font-size: 2.2vw;
+  font-weight: bold;
+  background: #1f5887;
+}
+#template>div{
+  padding: 1.5% 0 0 0;
+  width: 73%;
+  margin: 0 auto;
+}
+#template img{
+  width: 20vw;
+  margin:3% 1.5vw;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+
+}
+#template img:hover{
+  cursor: pointer;
+}
+#close{
+  display: none;
+  cursor: pointer;
+}
+/*                  = = = =  = = = =  = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = =           Cpanel          = = = = = = = = = = = = = = = = = = = = = =
+= = = =  = = = =  = = = =                                           */
+#cpanel{
+  margin-left: 3%;
+  float:left;
+}
+.add{
+  visibility: hidden;
+  cursor: pointer;
+}
+.strong{
+  font-weight: bold;
+  cursor: move;
+}
+/*                  = = = =  = = = =  = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = =           Editor          = = = = = = = = = = = = = = = = = = = = = =
+= = = =  = = = =  = = = =                                           */
+#cvForm{
+  display:none;
+  padding-top: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+#editcv{
+  width: 70%;
+  float: right!important;
+  margin-right: 3%;
+}
+#saveAndDownload{
+  width:70%; float:right!important;
+  margin-right: 3%;
+
+}
+#saveAndDownload>div{
+  margin-left:0.5%;
+  margin-right:0.5%;
+}
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = =          RESPONSIVE                           = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =*/
+
+@media only screen and (max-width:769px) {
+  /*                  = = = =  = = = =  = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = =     Responsive template     = = = = = = = = = = = = = = = = = = = = = =
+  = = = =  = = = =  = = = =                                          */
+  #template{
+    width: 100vw;
+    min-height: 100%;
+    background: rgba(53,53,53,.6);
+    padding: 15vh 0;
+  }
+  #template p{
+    width:80%;
+    clear: both;
+    margin: 5% auto;
+    padding:4% 0;
+    font-size: 3.5vw;
+    font-weight: bold;
+    background: #283593;
+  }
+  #template>div{
+    background: #426576;
+    padding: 5% 0 0 0;
+    width: 85%;
+    margin: 0 auto;
+  }
+  #template img{
+    width: 85%;
+    margin:7% 2%;
+    animation: none;
+  }
+  /*                  = = = =  = = = =  = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = =     Responsive Cpanel     = = = = = = = = = = = = = = = = = = = = = =
+  = = = =  = = = =  = = = =                                          */
+  #cpanel{
+    margin: 0 auto 20px auto;
+    width: 90%;
+    float: none;
+  }
+  /*                  = = = =  = = = =  = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = =           Editor          = = = = = = = = = = = = = = = = = = = = = =
+  = = = =  = = = =  = = = =                                           */
+  #editcv{
+    width: 90%;
+    float: none!important;
+    margin: 0 auto;
+  }
+  #saveAndDownload{
+    width:100%; float:none!important;
+    margin-bottom: 5%;
+  }
+  #ct,#download,#download3{
+    width: 70%!important;
+    font-size: large!important;
+    margin: 2% auto!important;
+  }
+}
+@media only screen and (min-width:770px) and (max-width:1200px){
+
+  /*                  = = = =  = = = =  = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = =     Responsive Cpanel     = = = = = = = = = = = = = = = = = = = = = =
+  = = = =  = = = =  = = = =                                          */
+  #cpanel{
+    margin: 0 auto 20px auto;
+    width: 90%;
+    float: none;
+  }
+  /*                  = = = =  = = = =  = = = =
+  = = = = = = = = = = = = = = = = = = = = = = = = =           Editor          = = = = = = = = = = = = = = = = = = = = = =
+  = = = =  = = = =  = = = =                                           */
+  #editcv{
+    width: 90%;
+    float: none!important;
+    margin: 0 auto;
+  }
+  #saveAndDownload{
+    width:100%; float:none!important;
+    margin-bottom: 5%;
+  }
+  #ct,#download,#download3{
+    width: 25%!important;
+    font-size: large!important;
+    margin: 2% auto!important;
+  }
+}
+
+/* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = =          Animation                           = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =*/
+
+
+
+@-webkit-keyframes pulse2 {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+}
+
+@keyframes pulse2 {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1.15, 1.15, 1.15);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+}
+.pulse2 {
+
+  -webkit-animation-name: pulse2;
+  animation-name: pulse2;
+}
+.out {
+  -webkit-animation-name: pulse2;
+  animation-name: pulse2;
+  animation-direction: reverse;
+
+}
