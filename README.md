@@ -22,3 +22,5 @@ Formal CV is a simple web project that allows you to create a formal CV in a few
 - JQuery<br>
 - MySQL<br>
 - PHP<br>
+- html2pdfrocket API<br>
+- Summernote<br>
